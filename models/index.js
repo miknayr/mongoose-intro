@@ -1,6 +1,6 @@
 // require mongoose package
 const mongoose  = require('mongoose')
-const DrinkSchema = require('./Drink')
+// const DrinkSchema = require('./Drink')
 require('dotenv').config()
 
 const connect = () => {
@@ -30,5 +30,5 @@ db.on('error', err =>{
 
 module.exports = {
   connect,
-  Drink: mongoose.model('Drink', require('./Drinks.js'))
+  Drink: mongoose.model('Drink', require('./Drink.js'))
 }
